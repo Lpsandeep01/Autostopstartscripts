@@ -1,6 +1,6 @@
 ---
 - name: Stop Tomcat
-  hosts: your_tomcat_servers
+  hosts: 54.215.34.146
   become: true
   tasks:
     - name: Ensure Tomcat is stopped

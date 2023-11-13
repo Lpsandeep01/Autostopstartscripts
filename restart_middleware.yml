@@ -1,0 +1,9 @@
+---
+- hosts: 54.215.34.146
+  become: yes
+  tasks:
+    - name: Restart Tomcat
+      systemd:
+        name: tomcat
+        state: restarted
+
