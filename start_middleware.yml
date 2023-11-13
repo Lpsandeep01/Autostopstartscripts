@@ -1,0 +1,10 @@
+---
+- name: Start Tomcat
+  hosts: your_tomcat_servers
+  become: true
+  tasks:
+    - name: Ensure Tomcat is started
+      systemd:
+        name: tomcat
+        state: started
+

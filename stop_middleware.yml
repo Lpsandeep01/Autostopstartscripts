@@ -1,0 +1,10 @@
+---
+- name: Stop Tomcat
+  hosts: your_tomcat_servers
+  become: true
+  tasks:
+    - name: Ensure Tomcat is stopped
+      systemd:
+        name: tomcat
+        state: stopped
+
